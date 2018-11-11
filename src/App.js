@@ -3,8 +3,11 @@ import React, { Component } from 'react';
 class App extends Component {
   render() {
     return (
-      <div><h1>Hellow world</h1></div>
-    );
+	<React.Fragment>
+	<label htmlFor="bar">bar</label>
+	<input id="bar" type="text" onClick={()=>{console.log("I am clicked!")}} />
+	</React.Fragment>
+    )
   }
 }
 
